@@ -1,6 +1,6 @@
 # Features
 - Overview
-    - Python3でOpenCV3が動くようにする、それと練習
+    - Python3でOpenCV3が動くようにする、それと練習
 
 - OS
     - Mac OSX(El Caption)
