@@ -119,6 +119,18 @@ make -j4
 make install
 ```
 
+# 動作確認
+- 以下のコマンドでerrorを吐かなければOK
+```sh
+$ python
+Python 3.6.1 (default, Mar 30 2017, 09:04:09) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> exit()
+$ 
+```
+
 # Reference
 - OpenCV3のインストール方法はこのサイトを参考にしました
     - [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)<br>
