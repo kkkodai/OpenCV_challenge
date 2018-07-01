@@ -7,8 +7,8 @@
 
 # Requirement
 - Xcode
-- autoconf、automake、libtool、CMake (automakeはインストールしなくてもOKかも？)
 - pyenv(python3.6.1)
+- autoconf、automake、libtool、CMake (automakeはインストールしなくてもOKかも？)
 - ffmpeg
 
 # Install
@@ -33,7 +33,63 @@ source ~/.bashrc
 pyenv install 3.6.1
 pyenv global 3.6.1
 ```
+## autoconf, automake, libtool, CMake
+```sh
+cd ~/Downloads
+curl -OL http://ftpmirror.gnu.org/autoconf/autoconf-latest.tar.gz
+tar xzf autoconf-latest.tar.gz
+cd autoconf-*
+./configure --prefix=/usr/local
+make && sudo make install
 
+cd ~/Downloads
+curl -fL http://ftpmirror.gnu.org/automake/automake-1.15.tar.gz | tar xzf -
+cd automake-*
+./configure --prefix=/usr/local
+make && sudo make install
+
+cd ~/Downloads
+curl -fL http://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz | tar xzf -
+cd libtool-*
+./configure --prefix=/usr/local
+make && sudo make install
+
+cd ~/Downloads
+curl -OL https://cmake.org/files/v3.8/cmake-3.8.1-Darwin-x86_64.tar.gz
+tar xzf cmake-3.8.1-Darwin-x86_64.tar.gz
+cd cmame-*
+cp CMake.app /Applications/
+
+ln -s "/Applications/CMake.app/Contents/bin/ccmake" /usr/local/bin/ccmake
+ln -s "/Applications/CMake.app/Contents/bin/cmake" /usr/local/bin/cmake
+ln -s "/Applications/CMake.app/Contents/bin/cmake-gui" /usr/local/bin/cmake-gui
+ln -s "/Applications/CMake.app/Contents/bin/cmakexbuild" /usr/local/bin/cmakexbuild
+ln -s "/Applications/CMake.app/Contents/bin/cpack" /usr/local/bin/cpack
+ln -s "/Applications/CMake.app/Contents/bin/ctest" /usr/local/bin/ctest
+```
+## FFmpeg
+```sh
+cd ~/Downloads
+curl -LO https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+tar xf pkg-config-0.29.2.tar.gz
+cd pkg-config-0.29.2
+./configure --with-internal-glib
+make && make install
+
+cd ~/Downloads
+curl -LO http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
+tar xf yasm-1.3.0.tar.gz
+cd yasm-1.3.0
+./configure
+make && make install
+
+cd ~/Downloads
+curl -LO http://www.ffmpegmac.net/resources/ffmpeg-3.3.1.tar.bz2
+tar xf ffmpeg-3.3.1.tar.bz2
+cd ffmpeg-3.3.1
+./configure
+make && make install
+```
 
 ## OpenCV
 ```sh
