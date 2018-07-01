@@ -1,17 +1,22 @@
-# Features
-- Overview
-    - Python3でOpenCV3が動くようにする、それと練習
+# Overview
+- Contents
+    - OpenCV3をインストール → [Install](#install)
+    - OpenCV3を使ってみる → [Practice](#practice)
+    - **行いたいこと(これが一番重要) → [Task](#task)**
+        - 口認識
+        - マーカー認識
+        - 口のどの位置にマーカーがあるか特定
 
 - OS
     - Mac OSX(El Caption)
 
-# Requirement
-- Xcode
-- pyenv(python3.6.1)
-- autoconf、automake、libtool、CMake (automakeはインストールしなくてもOKかも？)
-- ffmpeg
-
 # Install
+## procedure
+1. Xcode
+2. pyenv(python3.6.1)
+3. autoconf、automake、libtool、CMake (automakeはインストールしなくてもOKかも？)
+4. ffmpeg
+
 ## Xcode
 - App Storeを起動してXcodeをインストール
 ## pyenv
@@ -132,6 +137,25 @@ $
 ```
 
 # Reference
-- OpenCV3のインストール方法はこのサイトを参考にしました
+- OpenCV3のインストール方法はこのサイトを参考にしました(神記事)
     - [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)<br>
     
+# Practice
+- capture1.py
+    - Macのwebカメラで顔認識
+- capture2.py
+    - 画面ぼやけさせる
+
+# Task
+- ### capture_mouth.py
+    - タスク：口認識を行う
+    - 問題点：haarcascade_mcs_mouth.xmlがない<br>
+    →　[node-opencv](https://github.com/peterbraden/node-opencv)レポジトリにあったため、使ってみるが全身口だらけになった
+
+- マーカー検出
+
+- 口のどの位置にマーカーがあるか特定
+
+# 方針変更か
+- Dlibの方が精度良いとのこと
+    - ラズパイに入れられる？
