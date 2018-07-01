@@ -2,7 +2,7 @@
 - Contents
     - OpenCV3をインストール → [Install](#install)
     - OpenCV3を使ってみる → [Practice](#practice)
-    - **行いたいこと(これが一番重要) → [Task](#task)**
+    - **行いたいこと(これが一番重要) → [Task](#task)**
         - 口認識
         - マーカー認識
         - 口のどの位置にマーカーがあるか特定
@@ -125,7 +125,7 @@ make install
 ```
 
 # 動作確認
-- 以下のコマンドでerrorを吐かなければOK
+- 以下のコマンドでerrorを吐かなければOK
 ```sh
 $ python
 Python 3.6.1 (default, Mar 30 2017, 09:04:09) 
@@ -141,15 +141,17 @@ $
     - [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)<br>
     
 # Practice
-- capture1.py
+- capture1_face.py
+    - Macのwebカメラで顔認識
+- capture1_face_eyes.py
     - Macのwebカメラで顔認識
 - capture2.py
-    - 画面ぼやけさせる
+    - 画面をぼやけさせる
 
 # Task
 - ### capture_mouth.py
-    - タスク：口認識を行う
-    - 問題点：haarcascade_mcs_mouth.xmlがない<br>
+    - タスク：口認識を行う
+    - 問題点：haarcascade_mcs_mouth.xmlがない<br>
     →　[node-opencv](https://github.com/peterbraden/node-opencv)レポジトリにあったため、使ってみるが全身口だらけになった
 
 - マーカー検出
