@@ -11,7 +11,7 @@
     - Mac OSX(El Caption)
 
 # Install
-## 参考サイト
+### 参考サイト
 - [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)
     - OpenCV3のインストール方法は大体これを参考(神記事)
     
