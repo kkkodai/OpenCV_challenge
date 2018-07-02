@@ -11,6 +11,11 @@
     - Mac OSX(El Caption)
 
 # Install
+## 参考サイト
+- [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)
+    - OpenCV3のインストール方法は大体これを参考(神記事)
+    
+
 ## procedure
 1. Xcode
 2. pyenv(python3.6.1)
@@ -21,7 +26,7 @@
 ## Xcode
 - App Storeを起動してXcodeをインストール
 ## pyenv
-- Referenceではanacondaもインストールしている → [Reference](#reference)
+- 参考サイトではanacondaもインストールしている
 
 ```sh
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
@@ -138,10 +143,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 $ 
 ```
 
-# Reference
-- OpenCV3のインストール方法はこのサイトを参考にしました(神記事)
-    - [Macで深層学習の環境をさくっと作る手順 with TensorFlow and OpenCV](https://qiita.com/mix_dvd/items/b49651cf1181a986506c)<br>
-    
 # Practice
 - capture1_face.py
     - Macのwebカメラで顔認識
