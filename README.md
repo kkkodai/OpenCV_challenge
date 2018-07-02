@@ -16,6 +16,7 @@
 2. pyenv(python3.6.1)
 3. autoconf、automake、libtool、CMake (automakeはインストールしなくてもOKかも？)
 4. ffmpeg
+5. OpenCV
 
 ## Xcode
 - App Storeを起動してXcodeをインストール
@@ -39,6 +40,7 @@ pyenv install 3.6.1
 pyenv global 3.6.1
 ```
 ## autoconf, automake, libtool, CMake
+- automakeはインストールしなくてもOKかも？
 ```sh
 cd ~/Downloads
 curl -OL http://ftpmirror.gnu.org/autoconf/autoconf-latest.tar.gz
@@ -144,7 +146,7 @@ $
 - capture1_face.py
     - Macのwebカメラで顔認識
 - capture1_face_eyes.py
-    - Macのwebカメラで顔認識
+    - Macのwebカメラで顔と両目の認識
 - capture2.py
     - 画面をぼやけさせる
 
