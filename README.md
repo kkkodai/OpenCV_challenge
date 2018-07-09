@@ -155,12 +155,13 @@ $
 - ### capture_mouth.py
     - タスク：口認識を行う
     - 問題点：haarcascade_mcs_mouth.xmlがない<br>
-    →　[node-opencv](https://github.com/peterbraden/node-opencv)レポジトリにあったため、使ってみるが全身口だらけになった
+    →　[node-opencv](https://github.com/peterbraden/node-opencv)レポジトリにあったため、使ってみるが<b>全身口だらけになった</b>
 
 - マーカー検出
 
 - 口のどの位置にマーカーがあるか特定
 
-# 方針変更か
+# 方針変更
 - Dlibの方が精度良いとのこと
-    - ラズパイに入れられる？
+    - ~~ラズパイに入れられる？~~ → できる
+    - 参照サイト:[Install dlib on the Raspberry Pi](https://www.pyimagesearch.com/2017/05/01/install-dlib-raspberry-pi/)
